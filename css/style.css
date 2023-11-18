@@ -1,0 +1,65 @@
+body{
+    background: linear-gradient(90deg,#010758,#490d61);
+    display: flex;
+    justify-content: center;
+}
+body h1{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: white;
+}
+body span{
+    color: red;
+    font-weight: 200;
+    font-size: x-large;
+   
+}
+.textmessage{
+    position: absolute;
+    left: 24%;
+    width: 653px;
+    height: 275px;
+    border-radius: 8px;
+    text-align: start;
+  }
+  .textmessage::placeholder{
+    font-size: 16px;
+    color: rgb(32, 29, 29);
+    font-weight: 8px;
+    
+  }
+
+.dropdown{
+visibility: visible;
+appearance: none;
+width: 435px;
+background: orange;
+border-radius: 34px;
+font-size: 1.1rem;
+padding: 5px;
+top: 7rem;
+position: absolute;
+right: 2rem;
+opacity: 0.8;
+text-align: center;
+cursor: pointer;
+}
+
+.footer{
+    position: absolute;
+    top: 17rem;
+    left: 60%;
+    
+}
+
+.playaudio{
+    width: 159px;
+    background: #ff2e08;
+    border-radius: 34px;
+    font-size: 1.1rem;
+    padding: 7px;
+    position: absolute;
+    top: 7rem;
+
+}
