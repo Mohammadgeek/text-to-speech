@@ -1,0 +1,13 @@
+{
+  "name": "text_to_voice",
+  "version": "1.0.0",
+  "description": "feuther \r - text to voice convert\r - multiple languagues mode\r - setting audio for expremint user",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "runsass": "sass scss/style.scss css/style.css --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
