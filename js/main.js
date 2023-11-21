@@ -18,6 +18,7 @@ let rate_toggle = listen_btn.insertAdjacentHTML("afterend",
 
 
 window.onload = () =>{
+   content_textbox.value = "";
    listvoices();
    all_voice();
    rateAudio();
@@ -52,8 +53,12 @@ voiceselect.onchange = () =>{
 
 function rateAudio(){ // probelmset
    let rate_toggle = document.querySelector('.rateFld');
-   speech.rate = rate_toggle.getAttribute('value');
-   console.log(speech.rate);
+   rate_toggle.addEventListener('change',function(){
+      let newrate = Number(rate_toggle.value);
+      speech.rate = newrate;
+      rate_toggle.setAttribute('value',newrate);
+   })
+   
 }
 
 

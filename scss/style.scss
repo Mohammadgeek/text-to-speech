@@ -1,19 +1,29 @@
+
+//color //
+
+$bg_playaudio: #ED7D31;
+$bg_dropdown: #7F7F7F;
+
+
+
 body{
     background: linear-gradient(90deg,#3541eb,#490d61);
     display: flex;
     justify-content: center;
-}
+
 body h1{
     text-align: center;
     font-size: 1.8rem;
     font-weight: 500;
     color: white;
-}
+
 body span{
     color: red;
     font-weight: 200;
     font: italic 20px 200px;
    
+}
+}
 }
 
 
@@ -102,3 +112,47 @@ color: white;
 
 
 
+/* 
+Responsive with sass 
+*/
+
+$mobile: 430px;
+$tablet: 850px;
+$desktop: 1080px;
+$smallscreen: 320px;
+
+@mixin textarea_tablet {
+   width: calc(100% / 2);
+   height: 254px;
+}
+
+@mixin footer_tablet{
+  .footer{
+    display: grid;
+    grid-template-columns: 200px 208px 86px;
+  }
+  .playaudio{
+    position: absolute;
+    top: 13rem;
+    left: -7rem;
+  }
+  .rateFld{
+    position: absolute;
+     top: 3rem;
+     left: 5rem;
+  }
+  label{
+    position: absolute;
+    top: 1.5rem;
+    left: 8rem;
+  }
+}
+
+@media screen and(max-width: $tablet) {
+  @include footer_tablet();
+}
+@media  screen and (max-width: $tablet) {
+  .textmessage{
+    @include textarea_tablet();
+  }
+}

@@ -3,15 +3,13 @@ body {
   display: flex;
   justify-content: center;
 }
-
-body h1 {
+body body h1 {
   text-align: center;
   font-size: 1.8rem;
   font-weight: 500;
   color: white;
 }
-
-body span {
+body body h1 body span {
   color: red;
   font-weight: 200;
   font: italic 20px 200px;
@@ -90,6 +88,37 @@ body span {
   border-radius: 4px;
   padding: 4px;
   text-align: center;
+}
+
+/* 
+Responsive with sass 
+*/
+@media screen and (max-width: 850px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 200px 208px 86px;
+  }
+  .playaudio {
+    position: absolute;
+    top: 13rem;
+    left: -7rem;
+  }
+  .rateFld {
+    position: absolute;
+    top: 3rem;
+    left: 5rem;
+  }
+  label {
+    position: absolute;
+    top: 1.5rem;
+    left: 8rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  .textmessage {
+    width: 50%;
+    height: 254px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
